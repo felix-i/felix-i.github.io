@@ -120,3 +120,26 @@ h2 {
     .sidebar { text-align: center; }
     .tag-cloud { justify-content: center; }
 }
+
+.social-link a {
+    display: flex;
+    align-items: center;
+    gap: 8px; /* Spacing between logo and text */
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.2s ease;
+}
+
+.icon-linkedin {
+    /* This makes the logo match your text color automatically */
+    fill: currentColor; 
+    transition: transform 0.2s ease;
+}
+
+.social-link a:hover {
+    color: var(--accent); /* Uses your blue accent color on hover */
+}
+
+.social-link a:hover .icon-linkedin {
+    transform: scale(1.1);
+}
