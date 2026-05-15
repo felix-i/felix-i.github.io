@@ -3,16 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name | Resume</title>
+    <title>Resume | Lead Engineer</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <!-- Google Fonts for a modern feel -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Your Name</h1>
-        <p>Your Professional Title</p>
-    </header>
-    <!-- Content goes here -->
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <section class="header-mobile">
+                <h1>Your Name</h1>
+                <p class="tagline">Lead Engineer</p>
+            </section>
+            
+            <div class="contact-info">
+                <h3>Contact</h3>
+                <p>📧 email@example.com</p>
+                <p>🔗 <a href="#">LinkedIn</a></p>
+                <p>💻 <a href="#">GitHub</a></p>
+            </div>
+
+            <div class="skills-section">
+                <h3>Cloud & DevOps</h3>
+                <div class="tag-cloud">
+                    <span>AWS</span><span>Docker</span><span>Fargate</span><span>Kafka</span><span>CI/CD</span><span>CloudFormation</span>
+                </div>
+                
+                <h3>Backend</h3>
+                <div class="tag-cloud">
+                    <span>.NET 6.0</span><span>C#</span><span>Node.js</span><span>GraphQL</span>
+                </div>
+
+                <h3>Data & Messaging</h3>
+                <div class="tag-cloud">
+                    <span>RabbitMQ</span><span>SQL Server</span><span>Redis</span><span>RDS</span>
+                </div>
+            </div>
+
+            <div class="education">
+                <h3>Education</h3>
+                <p><strong>B.Comp.Sci</strong><br>Monash University</p>
+                <p class="meta">GPA: 3.83 | WAM: 84.78</p>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="content">
+            <header class="desktop-only">
+                <h1>Your Name</h1>
+                <p class="tagline">Lead Engineer | Distributed Systems & Cloud Architecture</p>
+            </header>
+
+            <section class="summary">
+                <p>Passionate about delivering high-quality business outcomes with scalable technology solutions. Championing code craftsmanship, engineering best practices, and clean architecture.</p>
+            </section>
+
+            <section class="experience">
+                <h2>Professional Experience</h2>
+                
+                <div class="job">
+                    <div class="job-header">
+                        <span class="company">Sportsbet.com.au</span>
+                        <span class="date">Nov 2018 – Present</span>
+                    </div>
+                    <p class="role">Lead Engineer</p>
+                    <ul class="outcomes">
+                        <li><strong>Revenue Growth:</strong> Led Same Game Multi initiatives expected to yield $15M revenue upside.</li>
+                        <li><strong>Leadership:</strong> Upskilled 10+ engineers, reducing time-to-contribution from months to 2 weeks.</li>
+                        <li><strong>Framework Design:</strong> Core contributor to next-gen trading platform, accelerating time-to-market from 12 months to 3 months.</li>
+                        <li><strong>Cost Optimization:</strong> Coordinated infrastructure audits resulting in $170K annual savings.</li>
+                    </ul>
+                    <p class="tech-used">Tools: .NET Core, Kafka, AWS (ECS/Fargate), ReactJS, OctopusDeploy</p>
+                </div>
+
+                <div class="job">
+                    <div class="job-header">
+                        <span class="company">Sportsbet.com.au</span>
+                        <span class="date">July 2016 – Nov 2018</span>
+                    </div>
+                    <p class="role">Analyst Developer</p>
+                    <ul class="outcomes">
+                        <li>Automated promotion platforms, reducing execution time from 30 minutes to 30 seconds.</li>
+                        <li>Reduced deployment risk by introducing NUnit and CI/CD pipelines across 10+ microservices.</li>
+                    </ul>
+                </div>
+
+                <div class="job">
+                    <div class="job-header">
+                        <span class="company">Intrepid Group</span>
+                        <span class="date">Mar 2014 – June 2016</span>
+                    </div>
+                    <p class="role">Senior .NET Developer</p>
+                    <ul class="outcomes">
+                        <li>Modernized CI infrastructure by migrating to Jenkins, driving down delivery risk.</li>
+                        <li>Onboarded and mentored offshore and graduate engineers.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="certifications">
+                <h2>Certifications</h2>
+                <p>Certified Scrum Master (CSM) — Scrum Alliance</p>
+            </section>
+        </main>
+    </div>
 </body>
 </html>

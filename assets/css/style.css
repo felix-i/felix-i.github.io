@@ -1,0 +1,122 @@
+:root {
+    --primary: #0f172a;
+    --accent: #2563eb;
+    --bg: #f1f5f9;
+    --text: #334155;
+    --white: #ffffff;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    margin: 0;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Sidebar */
+.sidebar {
+    background: #1e293b;
+    color: #f8fafc;
+    padding: 40px 30px;
+}
+
+.sidebar h3 {
+    color: #94a3b8;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 1.5px;
+    margin: 25px 0 10px 0;
+}
+
+.tag-cloud {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.tag-cloud span {
+    background: #334155;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    color: #e2e8f0;
+}
+
+/* Content */
+.content {
+    padding: 50px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin-bottom: 5px;
+}
+
+.tagline {
+    font-size: 1.1rem;
+    color: var(--accent);
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+h2 {
+    border-bottom: 2px solid var(--bg);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: var(--primary);
+    font-size: 1.3rem;
+}
+
+.job {
+    margin-bottom: 35px;
+}
+
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.role {
+    color: var(--accent);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.outcomes {
+    padding-left: 18px;
+    margin-bottom: 10px;
+}
+
+.outcomes li {
+    margin-bottom: 8px;
+}
+
+.tech-used {
+    font-size: 0.85rem;
+    background: var(--bg);
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-style: italic;
+}
+
+@media (max-width: 850px) {
+    .container { grid-template-columns: 1fr; }
+    .desktop-only { display: none; }
+    .sidebar { text-align: center; }
+    .tag-cloud { justify-content: center; }
+}
