@@ -12,15 +12,20 @@ body { font-family: 'Inter', sans-serif; background-color: var(--bg); color: var
 .tag-cloud span { background: #334155; padding: 4px 10px; border-radius: 4px; font-size: 0.75rem; color: #e2e8f0; }
 .content { padding: 50px; }
 
-/* Unified Heading Style - Increased Font Size */
+/* Unified Heading Style - Increased Size and Spacing */
 .section-header {
-    font-size: 1.1rem;
+    font-size: 1.25rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1.5px;
     color: var(--accent);
     margin-bottom: 20px;
-    margin-top: 10px;
+    margin-top: 45px; /* Creates significant distance from the content above */
+}
+
+/* Removes the top margin for the very first header ("About") so it sits flush at the top */
+.content .section-header:first-of-type {
+    margin-top: 0;
 }
 
 .summary { margin-bottom: 40px; }
@@ -28,7 +33,6 @@ body { font-family: 'Inter', sans-serif; background-color: var(--bg); color: var
 .job { margin-bottom: 40px; }
 .job-header { display: flex; justify-content: space-between; font-weight: 700; color: var(--primary); margin-bottom: 8px; }
 
-/* Restored accent color to the job titles */
 .role { color: var(--accent); font-weight: 600; margin-bottom: 10px; }
 
 .outcomes { padding-left: 20px; }
