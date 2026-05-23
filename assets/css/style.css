@@ -20,7 +20,7 @@ body { font-family: 'Inter', sans-serif; background-color: var(--bg); color: var
     letter-spacing: 1.5px;
     color: var(--accent);
     margin-bottom: 20px;
-    margin-top: 45px; /* Creates significant distance from the content above */
+    margin-top: 45px; 
 }
 
 /* Removes the top margin for the very first header ("About") so it sits flush at the top */
