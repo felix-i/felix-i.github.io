@@ -11,12 +11,26 @@ body { font-family: 'Inter', sans-serif; background-color: var(--bg); color: var
 .tag-cloud { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 20px; }
 .tag-cloud span { background: #334155; padding: 4px 10px; border-radius: 4px; font-size: 0.75rem; color: #e2e8f0; }
 .content { padding: 50px; }
-.section-title, h2 { font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 2px; color: var(--accent); margin-bottom: 20px; }
+
+/* Unified Heading Style */
+.section-header {
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--accent);
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.summary { margin-bottom: 40px; }
+.experience { margin-bottom: 40px; }
 .job { margin-bottom: 40px; }
 .job-header { display: flex; justify-content: space-between; font-weight: 700; color: var(--primary); margin-bottom: 8px; }
 .role { color: var(--primary); font-weight: 600; margin-bottom: 10px; }
 .outcomes { padding-left: 20px; }
 .outcomes li { margin-bottom: 8px; font-size: 0.95rem; }
+
 @media (max-width: 850px) {
     body { padding: 0; }
     .container { grid-template-columns: 1fr; border-radius: 0; }
