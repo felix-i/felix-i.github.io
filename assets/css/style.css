@@ -1,33 +1,22 @@
-:root {
-    --primary: #0f172a; --accent: #2563eb; --bg: #f1f5f9;
-    --text: #334155; --muted: #94a3b8; --white: #ffffff;
-}
-
+:root { --primary: #0f172a; --accent: #2563eb; --bg: #f1f5f9; --text: #334155; --muted: #94a3b8; --white: #ffffff; }
 * { box-sizing: border-box; margin: 0; padding: 0; }
 body { font-family: 'Inter', sans-serif; background-color: var(--bg); color: var(--text); line-height: 1.6; padding: 40px 20px; }
-
 .container { max-width: 1050px; margin: 0 auto; display: grid; grid-template-columns: 320px 1fr; background: var(--white); border-radius: 12px; box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1); overflow: hidden; }
-
 .sidebar { background: #1e293b; color: #f8fafc; padding: 40px 30px; }
 .sidebar h1 { font-size: 1.8rem; font-weight: 700; }
 .tagline-sub { color: var(--muted); font-size: 0.85rem; text-transform: uppercase; margin-bottom: 30px; }
 .contact-info h3, .skills-section h3, .education-sidebar h3 { color: var(--muted); text-transform: uppercase; font-size: 0.7rem; letter-spacing: 1.5px; margin: 25px 0 10px 0; }
-
 .social-link a { display: inline-flex; align-items: center; gap: 8px; color: #e2e8f0; text-decoration: none; }
 .social-link a:hover { color: var(--accent); }
-
-.tag-cloud { display: flex; flex-wrap: wrap; gap: 6px; }
-.tag-cloud span { background: #334155; padding: 4px 8px; border-radius: 4px; font-size: 0.75rem; }
-
+.tag-cloud { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 20px; }
+.tag-cloud span { background: #334155; padding: 4px 10px; border-radius: 4px; font-size: 0.75rem; color: #e2e8f0; }
 .content { padding: 50px; }
 .section-title { font-size: 0.9rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1.5px; color: var(--muted); margin-bottom: 30px; }
-
 .job { margin-bottom: 40px; }
 .job-header { display: flex; justify-content: space-between; font-weight: 700; color: var(--primary); margin-bottom: 8px; }
 .role { color: var(--accent); font-weight: 600; margin-bottom: 10px; }
 .outcomes { padding-left: 20px; }
 .outcomes li { margin-bottom: 8px; font-size: 0.95rem; }
-
 @media (max-width: 850px) {
     body { padding: 0; }
     .container { grid-template-columns: 1fr; border-radius: 0; }
