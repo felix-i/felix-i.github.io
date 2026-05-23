@@ -6,35 +6,25 @@ body { font-family: 'Inter', sans-serif; background-color: var(--bg); color: var
 .sidebar h1 { font-size: 1.8rem; font-weight: 700; }
 .tagline-sub { color: var(--muted); font-size: 0.85rem; text-transform: uppercase; margin-bottom: 30px; }
 .contact-info h3, .skills-section h3, .education-sidebar h3 { color: var(--muted); text-transform: uppercase; font-size: 0.7rem; letter-spacing: 1.5px; margin: 25px 0 10px 0; }
-.social-link a { display: inline-flex; align-items: center; gap: 8px; color: #e2e8f0; text-decoration: none; }
-.social-link a:hover { color: var(--accent); }
+.contact-item { display: flex; align-items: center; gap: 12px; margin-bottom: 12px; }
+
+/* Email Contrast Fixes */
+.stylized-email a { color: #cbd5e1 !important; text-decoration: none; font-weight: 400; transition: color 0.2s ease; }
+.stylized-email a:hover { color: #60a5fa !important; text-decoration: underline; }
+.email-icon { color: #94a3b8; width: 16px; height: 16px; }
+
+.social-link { display: inline-flex; align-items: center; gap: 8px; color: #e2e8f0; text-decoration: none; }
+.social-link:hover { color: var(--accent); }
 .tag-cloud { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 20px; }
 .tag-cloud span { background: #334155; padding: 4px 10px; border-radius: 4px; font-size: 0.75rem; color: #e2e8f0; }
 .content { padding: 50px; }
-
-/* Unified Heading Style - Increased Size and Spacing */
-.section-header {
-    font-size: 1.25rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    color: var(--accent);
-    margin-bottom: 20px;
-    margin-top: 45px; 
-}
-
-/* Removes the top margin for the very first header ("About") so it sits flush at the top */
-.content .section-header:first-of-type {
-    margin-top: 0;
-}
-
+.section-header { font-size: 1.25rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; color: var(--accent); margin-bottom: 20px; margin-top: 45px; }
+.content .section-header:first-of-type { margin-top: 0; }
 .summary { margin-bottom: 40px; }
 .experience { margin-bottom: 40px; }
 .job { margin-bottom: 40px; }
 .job-header { display: flex; justify-content: space-between; font-weight: 700; color: var(--primary); margin-bottom: 8px; }
-
 .role { color: var(--accent); font-weight: 600; margin-bottom: 10px; }
-
 .outcomes { padding-left: 20px; }
 .outcomes li { margin-bottom: 8px; font-size: 0.95rem; }
 
